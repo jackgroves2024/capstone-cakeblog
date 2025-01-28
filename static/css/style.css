@@ -27,6 +27,14 @@ body {
     position: relative;
 }
 
+.social-icon {
+    color:#492267;
+}
+
+.social-icon:hover {
+    color: #ea5080;
+}
+
 .image-flash {
     position: absolute;
     bottom: 5%;

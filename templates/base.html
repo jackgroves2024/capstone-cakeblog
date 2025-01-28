@@ -36,7 +36,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light alt-bg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.webp' %}" alt="Logo" class="logo"></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.webp' %}" alt="Logo"
+                    class="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,7 +46,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="#">Home</a>
+                            href="{% url 'home' %}">Home</a>
                     </li>
                 </ul>
             </div>
@@ -64,8 +65,12 @@
     <footer class="footer mt-auto py-3 alt-bg">
         <p class="m-0 text-center nav-text">Cakes by Jessica W</p>
         <p class="m-0 text-center nav-text">Follow me here:
-            <i class="fa-brands fa-square-instagram ms-3"></i>
-            <i class="fa-brands fa-square-facebook ms-3"></i>
+            <a href="https://www.instagram.com/cakesbyjessicaw/" target="_blank" class="social-icon">
+                <i class="fa-brands fa-square-instagram ms-3"></i>
+            </a>
+            <a href="https://www.facebook.com/cakesbyjessicaw" target="_blank" class="social-icon">
+                <i class="fa-brands fa-square-facebook ms-3"></i>
+            </a>
         </p>
     </footer>
 
