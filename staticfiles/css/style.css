@@ -1,5 +1,7 @@
+/* General Styles */
 body {
     background-color: #fcebbc;
+    font-family: 'Sour Gummy', sans-serif;
 }
 
 .nav-text {
@@ -18,15 +20,18 @@ body {
     background-color: #fcebbc;
 }
 
+/* Card Styles */
 .card {
     border: none;
     background-color: transparent;
 }
 
+/* Image Container Styles */
 .image-container {
     position: relative;
 }
 
+/* Social Icons Styles */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -36,21 +41,30 @@ body {
 .social-icons .social-icon {
     margin: 0 5px;
 }
+
 .social-icon {
-    color:#492267;
+    color: #492267;
 }
 
 .social-icon:hover {
     color: #ea5080;
 }
 
-.copyright {
+/* Footer Styles */
+.footer {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .copyright {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
+/* Image Flash Styles */
 .image-flash {
     position: absolute;
     bottom: 5%;
@@ -59,11 +73,13 @@ body {
     background-color: #188181;
 }
 
+/* Scale Styles */
 .scale {
     width: 100%;
     height: auto;
 }
 
+/* Masthead Styles */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -91,13 +107,14 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #492267;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
 }
 
+/* Post Styles */
 .post-link {
     text-decoration: none;
     color: #492267;
@@ -119,6 +136,7 @@ body {
     color: lightgray;
 }
 
+/* Button Styles */
 .btn-signup,
 .btn-edit {
     background-color: #188181;
@@ -129,17 +147,6 @@ body {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
 }
 
 .btn-like {
@@ -160,10 +167,31 @@ body {
     border: none;
 }
 
+/* Link Styles */
+.link {
+    color: #23BBBB;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+/* Text Styles */
 .faded {
     color: rgb(172, 175, 175);
 }
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer .copyright {
+        position: static;
+        margin-top: 10px;
+    }
 }
