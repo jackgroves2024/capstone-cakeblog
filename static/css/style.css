@@ -165,37 +165,37 @@ nav .container-fluid {
 /* Button Styles */
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #ea5080;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #ea5080;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #ea5080;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #ea5080;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #ea5080;
     background: transparent;
     border: none;
 }
 
 /* Link Styles */
 .link {
-    color: #23BBBB;
+    color: #ea5080;
     text-decoration: none;
 }
 
@@ -212,6 +212,10 @@ nav .container-fluid {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.account-text {
+    color: #492267;
 }
 
 /* Media Queries */

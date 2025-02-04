@@ -8,12 +8,13 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign Up" %}</h3>
+      <h3 class="account-text">{% trans "Sign Up" %}</h3>
 
-      <p>{% blocktrans %}
-        Welcome back to the code|star blog.
+      <p class="account-text">{% blocktrans %}
+        Welcome to Blogs by Jessica W. Fill out the form below to create an account and start sharing your thoughts with
+        the community here.
         Do you already have an account? Then please
-        <a class="link" href="{{ login_url }}">sign in</a>
+        <a class="link" href="{{ login_url }}"><u>sign in</u></a>
         instead.
         {% endblocktrans %}
       </p>
@@ -21,7 +22,7 @@
   </div>
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+      <form class="signup account-text" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
