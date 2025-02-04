@@ -5,7 +5,7 @@
 
 ## UX Design Process
 - **Link to User Stories in GitHub Projects:**
-  - [Add a link to the GitHub Projects kanban board.]
+  - [GitHub Projects Kanban Board](https://github.com/users/jackgroves2024/projects/3)
 - **Wireframes:**
   - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
   - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
