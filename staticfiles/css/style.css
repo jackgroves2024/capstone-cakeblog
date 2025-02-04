@@ -4,10 +4,6 @@ body {
     font-family: 'Sour Gummy', sans-serif;
 }
 
-.nav-text {
-    color: #492267;
-}
-
 .light-bg {
     background-color: #fff;
 }
@@ -18,6 +14,31 @@ body {
 
 .main-bg {
     background-color: #fcebbc;
+}
+
+/* Navbar Styles */
+.nav-text {
+    color: #492267;
+}
+
+nav .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    white-space: nowrap; /* Prevents text from wrapping */
+    pointer-events: none; /* Prevents text from being selected */
+}
+
+.navbar-collapse {
+    flex-grow: 0;
 }
 
 /* Card Styles */
@@ -126,6 +147,11 @@ body {
     background-color: #ffd4fc;
 }
 
+.page-link:hover {
+    color: #492267;
+    background-color: #ea5080;
+}
+
 .post-title {
     margin-top: 10%;
     margin-left: 5%;
@@ -139,37 +165,37 @@ body {
 /* Button Styles */
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #ea5080;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #ea5080;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #ea5080;
     border: none;
     background: transparent;
 }
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #ea5080;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #ea5080;
     background: transparent;
     border: none;
 }
 
 /* Link Styles */
 .link {
-    color: #23BBBB;
+    color: #ea5080;
     text-decoration: none;
 }
 
@@ -188,10 +214,31 @@ body {
     color: rgb(222, 146, 168);
 }
 
+.account-text {
+    color: #492267;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .footer .copyright {
         position: static;
         margin-top: 10px;
+    }
+
+    .navbar-text {
+        position: static;
+        transform: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        order: -1; /* Ensures the toggle button is always on the left */
     }
 }
