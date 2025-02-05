@@ -1,5 +1,6 @@
 from .models import Comment
 from django import forms
+from .models import Subscriber
 
 
 class CommentForm(forms.ModelForm):
@@ -12,5 +13,16 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'body': forms.Textarea(
                 attrs={'placeholder': 'Enter your comment here...'}
+            ),
+        }
+
+
+class SubscriptionForm(forms.ModelForm):
+    class Meta:
+        model = Subscriber
+        fields = ['email']
+        widgets = {
+            'email': forms.EmailInput(
+                attrs={'placeholder': 'Enter your email to subscribe...'}
             ),
         }

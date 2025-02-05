@@ -7,7 +7,7 @@
 - **Link to User Stories in GitHub Projects:**
   - [GitHub Projects Kanban Board](https://github.com/users/jackgroves2024/projects/3)
 - **Wireframes:**
-  - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
+  - [Wireframe Images Here](https://github.com/jackgroves2024/capstone-cakeblog/tree/main/WIREFRAMES%20FOR%20CAPSTONE)
   - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
 - **Design Rationale:**
   - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
@@ -23,7 +23,7 @@
   - [Mention how the features address the needs of diverse users, including those with SEND.]
 
 ## Deployment
-- **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
+- **Platform:** Heroku
 - **High-Level Deployment Steps:** 
   1. [Step 1]
   2. [Step 2]

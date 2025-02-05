@@ -1,8 +1,12 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
 from .models import Post
+from django.core.mail import send_mail
+from django.conf import settings
+from .models import Subscriber
 from .forms import CommentForm
+from .forms import SubscriptionForm
 
 
 # Create your views here.
@@ -43,6 +47,20 @@ def post_detail(request, slug):
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
             )
+            # Send email notifications to subscribers
+            subscribers = Subscriber.objects.all()
+            for subscriber in subscribers:
+                send_mail(
+                    'New Blog Post Published',
+                    (
+                        f'A new blog post: "{post.title}" has been published. '
+                        'Check it out at '
+                        f'{request.build_absolute_uri(post.get_absolute_url())}'
+                        ),
+                    settings.DEFAULT_FROM_EMAIL,
+                    [subscriber.email],
+                    [subscriber.email],
+                )
 
     comment_form = CommentForm()
 
@@ -56,3 +74,17 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         }
     )
+
+
+def subscribe(request):
+    if request.method == 'POST':
+        form = SubscriptionForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'You have successfully subscribed to email updates.'
+            )
+            return redirect('home')
+    else:
+        form = SubscriptionForm()
+    return render(request, 'blog/subscribe.html', {'form': form})
