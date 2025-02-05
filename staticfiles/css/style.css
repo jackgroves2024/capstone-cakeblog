@@ -193,6 +193,12 @@ nav .container-fluid {
     border: none;
 }
 
+.btn-sub {
+    color: #fff;
+    background: #ea5080;
+    border: none;
+}
+
 /* Link Styles */
 .link {
     color: #ea5080;
