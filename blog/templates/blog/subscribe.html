@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+
 {% block content %}
-<h2>Subscribe to Email Updates</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Subscribe</button>
-</form>
+<div class="d-flex justify-content-center flex-column align-items-center mt-5">
+    <h2 class="text-center">Subscribe to Email Updates</h2>
+    <form method="post" class="text-center col-md-6">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-signup">Subscribe</button>
+    </form>
+</div>
 {% endblock %}
