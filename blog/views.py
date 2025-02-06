@@ -2,7 +2,7 @@ import logging
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from django.contrib import messages
-from .models import Post
+from .models import Post, Subscriber
 from .forms import CommentForm, SubscriptionForm
 
 # Set up logging
@@ -74,3 +74,12 @@ def subscribe(request):
     else:
         form = SubscriptionForm()
     return render(request, 'blog/subscribe.html', {'form': form})
+
+
+def unsubscribe(request, email):
+    subscriber = get_object_or_404(Subscriber, email=email)
+    if request.method == 'POST':
+        subscriber.delete()
+        messages.success(request, 'You have successfully unsubscribed from email updates.') # noqa
+        return redirect('home')
+    return render(request, 'blog/unsubscribe.html', {'subscriber': subscriber})
