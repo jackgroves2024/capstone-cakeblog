@@ -1,4 +1,4 @@
-# Project Title
+# Blogs by Jessica W
 
 ## Overview
 [Briefly describe the purpose of the project, the problem it solves, and its value to users.]
@@ -17,7 +17,7 @@
   - [Reflect on how these changes enhance inclusivity and accessibility.]
 
 ## Key Features
-- **Feature 1:** [Briefly describe the implemented feature.]
+- **User Account System:** A secure registration system for users to create accounts to enable interactions with blog posts they can view. Users can login/logout on demand, with access to CRUD features of their personal content protected behind login. Users can opt to add their email to their account when creating it, and user passwords have minimum requirements to ensure strong security implementation for each account's details.
 - **Feature 2:** [Briefly describe the implemented feature.]
 - **Inclusivity Notes:** 
   - [Mention how the features address the needs of diverse users, including those with SEND.]
@@ -25,15 +25,17 @@
 ## Deployment
 - **Platform:** Heroku
 - **High-Level Deployment Steps:** 
-  1. [Step 1]
-  2. [Step 2]
-  3. [Step 3]
+  1. Clone the repository: `git clone https://github.com/jackgroves2024/capstone-cakeblog.git`
+  2. Set up the Heroku environment with a PostgreSQL database.
+  3. Configure environment variables for sensitive data (e.g., secret keys, STMP server keys).
+  4. Deploy using Heroku Git or GitHub integration.
 - **Verification and Validation:**
-  - Steps taken to verify the deployed version matches the development version in functionality.
-  - [Include any additional checks to ensure accessibility of the deployed application.]
+  - I have deployed and compared the heroku app to my local test environment to verify the consistency in function and design (e.g. ensuring static files are served correctly.)
+  - I have also compared the visual readability matches on the deployment and local server across different device screen sizes to ensure responsive user experience is appropriate for users with accessibility needs, such as limited sight, colour blindness, etc.
 - **Security Measures:**
-  - Use of environment variables for sensitive data.
-  - Ensured DEBUG mode is disabled in production.
+  - Use of environment variables for sensitive data being kept out of the raw code, added to the config vars section of the Heroku App Dashboard.
+  - `DEBUG MODE` set to `False` for deployed versions of the app for security benefit.
+  - `env.py` file used to store sensitive information in local repository, added to .gitignore to remain hidden from public view.
 
 ## AI Implementation and Orchestration
 
