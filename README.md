@@ -42,17 +42,15 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 ## AI Implementation and Orchestration
 
 ### Use Cases and Reflections:
-(Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
 
   - **Code Creation:** 
-    - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
-    - Examples: Reverse prompts for alternative code solutions and question-answer prompts for resolving specific challenges.
+    - Reflection: Having access to copilot's extension with VSCode proved to be a major asset in enhancing the quality and pacing of my produced work, thanks to it's assistance in quickly producing simple starter code, such as HTML boilerplate, auto completion of lines based on the context of my work, and allowing me to quickly make comments within my code to enhance the readability and identification of my work's function throughout various files. For heavier use in production, accessing the chat to receive step by step guidance enabled me to identify a starting point in what I wished to create or achieve, with each step breaking down the code to allow me to ensure my own understanding of it before choosing to implement it into my workspace.
+
+    - Key Example - Mail System: Step by step production using the chat feature assisted me in constructing my Email Update system, as I was unfamiliar with the processes required in the backend to enable functionality of a feature that acts mainly on an external environment, being the emails sent out themselves. I had no prior knowledge of where to begin, but was then able to learn about the existence and implementation of STMP servers and handling them securely to prevent leaking of sensitive information.
   - **Debugging:** 
     - Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
   - **Performance and UX Optimization:** 
     - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
-  - **Automated Unit Testing: (If undertaken)**
-    - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
 
 - **Overall Impact:**
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
@@ -61,13 +59,10 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 
 ## Testing Summary
 - **Manual Testing:**
-  - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
-  - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
+  - **Devices and Browsers Tested:** Windows 11, Android 14, Google Chrome, Opera GX, Samsung Browser, Microsoft Edge
+  - **Features Tested:** All main site features were manually tested, including navigation, CRUD operations, and User/Admin Authentication
   - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
-- **Automated Testing: (If undertaken)**
-  - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
-  - Features Covered: [Briefly list features covered by automated tests.]
-  - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
+
 
 ## Future Enhancements
 - [List potential improvements or additional features for future development.]
