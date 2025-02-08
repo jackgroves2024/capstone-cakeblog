@@ -3,7 +3,7 @@
 {% block content %}
 <div class="d-flex justify-content-center flex-column align-items-center mt-5">
     <h2 class="text-center">Subscribe to Email Updates</h2>
-    <form method="post" class="text-center col-md-6">
+    <form method="post" class="text-center col-md-6" aria-label="Subscribe to Email Updates">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-signup">Subscribe</button>

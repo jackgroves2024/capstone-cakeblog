@@ -38,10 +38,10 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light alt-bg">
+    <nav class="navbar navbar-expand-lg alt-bg" role="navigation" aria-label="Main Navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/logo.webp' %}" alt="Logo" class="logo">
+                <img src="{% static 'images/logo.webp' %}" alt="Cakes by Jessica W Business Logo" class="logo">
             </a>
             <span class="navbar-text">
                 Blogs by Jessica W.
@@ -87,7 +87,8 @@
                 <div class="alert {{ message.tags }} alert-dismissible
           fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        tabindex="0"></button>
                 </div>
                 {% endfor %}
             </div>
@@ -113,7 +114,8 @@
                 <h4 class="nav-text">Subscribe to our newsletter</h4>
                 <form method="post" action="{% url 'subscribe' %}">
                     {% csrf_token %}
-                    <input type="email" name="email" placeholder="Enter your email">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email">
                     <button type="submit" class="btn-sub">Subscribe</button>
                 </form>
             </div>
@@ -143,7 +145,7 @@
         </script>
     <!-- Fontawesome Script-->
     <script src="https://kit.fontawesome.com/c1c6739d85.js" crossorigin="anonymous"></script>
-    
+
     {% block extras %}
     {% endblock %}
 </body>

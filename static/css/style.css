@@ -35,10 +35,19 @@ nav .container-fluid {
     font-size: 1.5rem;
     white-space: nowrap; /* Prevents text from wrapping */
     pointer-events: none; /* Prevents text from being selected */
+    color:#492267;
 }
 
 .navbar-collapse {
     flex-grow: 0;
+}
+
+.nav-link {
+    color: #492267;
+}
+
+.nav-link:hover {
+    color: #ea5080;
 }
 
 /* Card Styles */
