@@ -1,6 +1,6 @@
 # Blogs by Jessica W - A capstone Django Project
 
-![Responsive site preview](Mediafiles\responsive.png)
+![Responsive site preview](Mediafiles/responsive.png)
 
 ## Overview
 Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog site to act as a social/community extension of the Cakesbyjessicaw independent baking business created by my partner as a way to turn a hobby into a self sustaining passion project. This inspired me to theme my blog around this with the idea being to bring individuals both to the business, and to form a community around that in which other people can gain inspiration and insights around baking of all kinds, all in a digestible and friendly format.
