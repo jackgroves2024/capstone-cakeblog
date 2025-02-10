@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import About
 
+# About page view below
+
 
 def about_me(request):
     """

@@ -1,6 +1,8 @@
 from django.core.mail import send_mail
 from django.core.management.base import BaseCommand
 
+# This command is used to test the email configuration.
+
 
 class Command(BaseCommand):
     help = 'Test email configuration'

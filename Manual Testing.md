@@ -131,3 +131,17 @@ Below will display the results of my HTML, CSS, JavaScript and Python validation
 ![css stylesheet warnings](Mediafiles/css_warning.png)
 
 - These two warnings are the only feedback provided, however these are circumstancial as it just to ensure that the appropriate packages/services are present in the directory to enable use of third party extensions. In the case of this project, this is not a problem, and as such can be considered reviewed, yet disregarded.
+
+## Python Validation (pep8)
+
+Every individual python file (excluding migrations, cache files etc.) has been validated through the Code Institute Pep8 Python Linter for error checking and format checking. I can confirm that at this time the final version of each file in this repository clears with no errors. Those that were present existed where `#noqa` tags had been added to lines ignoring the character limit of 80. This was only applied in areas where it was deemed that the solution for shortening these lines was more harm than benefit for the readability and function of the code involved. This has been used sparingly throughout the project as it remains to be correct practice to maintain this character limit where possible.
+
+ - (See README Credits section for the URL to this resource for cross comparison)
+
+ ## JavaScript Validation (JSHint)
+
+I have only implemented a single javascript file (This can be found [here](staticfiles/js/comments.js)) into this project that is used to help support the CRUD operations of the blog comments section, using buttons with modals to improve user experience when engaging with the feature on a post. After running this file through an online validator, the following output metrics are produced.
+
+![JavaScript Validation](Mediafiles/js_valid.png)
+
+ - The `bootstrap` variable showing as undefined is circumstancial from the validator not having access to the environment in which things like bootstrap are considered to be global variables. Likewise, the same flag would occur for `document` being undefined. However, JSHint has a checkbox configuration to specify `Assume Browser`, providing context. To summarise, the only flags showing from validating this JavaScript file are false positives as a result of the code being isolated from the deployment environment when entered into a validator.

@@ -9,7 +9,7 @@ from .forms import CommentForm, SubscriptionForm
 # Set up logging
 logger = logging.getLogger(__name__)
 
-# Create your views here.
+# Blog post main views below.
 
 
 class PostList(generic.ListView):
@@ -62,6 +62,8 @@ def post_detail(request, slug):
         }
     )
 
+# Email system views below.
+
 
 def subscribe(request):
     if request.method == 'POST':
@@ -81,9 +83,12 @@ def unsubscribe(request, email):
     subscriber = get_object_or_404(Subscriber, email=email)
     if request.method == 'POST':
         subscriber.delete()
-        messages.success(request, 'You have successfully unsubscribed from email updates.') # noqa
+        messages.success(request, 'You have successfully unsubscribed from email updates.')  # noqa
         return redirect('home')
     return render(request, 'blog/unsubscribe.html', {'subscriber': subscriber})
+
+
+# Comment CRUD views below.
 
 
 def comment_edit(request, slug, comment_id):
@@ -104,7 +109,7 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!') # noqa
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')  # noqa
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
@@ -119,6 +124,6 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!') # noqa
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')  # noqa
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))

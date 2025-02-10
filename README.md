@@ -80,7 +80,7 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 
   - **Devices and Browsers Tested:** Windows 11, Android 14, Google Chrome, Opera GX, Samsung Browser, Microsoft Edge, iOS, MacOS, Safari
 
-  - **Features Tested:** All main site features were manually tested, including navigation, CRUD operations, and User/Admin Authentication
+  - **Features Tested:** All main site features were manually tested, including navigation, mail services, CRUD operations, and User/Admin Authentication
 
   - **Results:** All test cases were reviewed as successful in their methods of verifying the functionality of the site's main features, along with the validation of correct coding practices, and the inclusion of appropriate accessibility features throughout each appropriate file. All files have been checked via appropriate validators to clear all major HTML, CSS, JS & Python usage in this project.
 

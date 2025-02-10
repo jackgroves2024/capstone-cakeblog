@@ -13,6 +13,6 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
 
 
-# Register your models here.
+# Models
 
 admin.site.register(Comment)
