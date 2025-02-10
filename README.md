@@ -11,18 +11,35 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 - **Wireframes:**
   - [Wireframe Images Here](https://github.com/jackgroves2024/capstone-cakeblog/tree/main/WIREFRAMES%20FOR%20CAPSTONE)
   -  The navigation is simplistic and visually streamlined to keep the pages readable and simple to understand. The overall aim was to avoid clutter whilst providing prominent enough content and interactivity that enhances user experience. Each wireframe was built with consistency in mind as the app's different pages are supposed to appear as extensions of the 'hub' that is the home page.
+
+  **ERD**
+
+  - [Entity Relationship Diagram](Mediafiles/erd.png)
+  
 - **Design Rationale:**
   - The colour theme was not determined on the wireframes but has been chosen based on the Cakesbyjessicaw business logo and existing designs used in promotional material, branding, and social media icons. The import font family used provides a soft readable set of characters that still feel fitting for the 'comfortable theme' of the overall app without compromising the experience's accessibility. The app's core features and general structure is dependent on the organisation and responsivity that Bootstrap5 provides, from the paginated card layout to the appearance of the various forms present. It has kept things dynamic and accessible across devices by enabling a mobile first development approach.
-  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
+
+  - The website's colour palette has been ran through contrast checkers for text readability. Whilst not flawless in lighthouse testing, I believe the standard is kept consciously high whilst maintaining the visual intergrity of the connections to the CakesbyjessicaW aesthetic.
+
 - **Reasoning For Any Final Changes:**
-  - [Summarise significant changes made to the design during development and the reasons behind them.]
-  - [Reflect on how these changes enhance inclusivity and accessibility.]
+  - The design originally intended to be backed by a page containing a gallery of image posts relating to the various orders/products, and whilst this would have been a simple implementation in the grand scheme of the project, taking on the learning of new apps, django features and external skills to create a mail system for the first time ended up being more time consuming than would be ideal. However, I am satisfied with this decision as it was one I made to help expand my horizons with brand new development knowledge, which I believe is a greater asset to me in the long term.
+
+  - Another change in more simpler areas revolved around the tweaking of hexcodes for the colours that define the business related look for the project. Some of the exact colours in the brand materials that existed prior to my work were not at a level I was satisfied with when reviewing contrast for readability and overall visual appearance.
+  
+  - Alterations were kept subtle but I believe have had a major impact on my quality of work when considering those in various circumstances, all of which should feel welcome and capable of engaging with a community building page that is considerate of all users equally.
+  
 
 ## Key Features
 - **User Account System:** A secure registration system for users to create accounts to enable interactions with blog posts they can view. Users can login/logout on demand, with access to CRUD features of their personal content protected behind login. Users can opt to add their email to their account when creating it, and user passwords have minimum requirements to ensure strong security implementation for each account's details.
-- **Feature 2:** [Briefly describe the implemented feature.]
-- **Inclusivity Notes:** 
-  - [Mention how the features address the needs of diverse users, including those with SEND.]
+
+- **Paginated Blog Posts:** 
+  The blog posts on the site are paginated to enhance user experience by breaking down content into manageable sections. This feature ensures that users can easily navigate through the blog posts without being overwhelmed by a long, continuous scroll. Pagination improves load times and provides a more organized and accessible way to browse through the content, making it easier for users to find and read the posts they are interested in.
+
+- **Email Subscription System:** 
+  The email subscription system allows users to subscribe to receive updates and notifications about new blog posts. This feature helps keep users engaged and informed about the latest updates on the site. Users can easily subscribe by providing their email address, and unsubscribe at any time. The system ensures that all email communications are handled securely and efficiently, enhancing the overall user experience and fostering a sense of community among subscribers.
+
+ ### Inclusivity Notes: 
+  Each feature of this site ties into a simple overarching structure with the design being made to avoid any longwinded scrolling, or other lengthy operations required to use anything on the site, from it's posts down to its accounts system. By keeping such things simple but effective, along with the coding considerations for accessibility tools, I believe the features displayed are functionally effective for user experience whilst remaining ultimately simplistic in practice.
 
 ## Deployment
 - **Platform:** Heroku

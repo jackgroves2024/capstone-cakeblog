@@ -29,3 +29,37 @@ This document contains all the manual testing performed for the blog project. Ea
 
 Below will display and summarise the various checks and validators used to verify the HTML, CSS, JavaScript, and Python aspects of my project. Where errors are present within code I have not created myself (e.g. Django base code causing flags), I shall acknowledge what appears to be the source, and what I have attempted, or would attempt to do to address this in future deployments.
 
+## Lighthouse Tests
+
+### Home Page
+
+![Lighthouse check: homepage](Mediafiles/LH_home.png)
+
+
+### About Page
+
+![Lighthouse check: about page](Mediafiles/LH_about.png)
+
+### Post View Page
+
+![Lighthouse check: post view](Mediafiles/LH_post.png)
+
+### Signup Page
+
+![Lighthouse check: signup page](Mediafiles/LH_signup.png)
+
+### Login Page
+
+![Lighthouse check: signup page](Mediafiles/LH_login.png)
+
+### Email Subscriber followup page
+
+![Lighthouse check: email landing](Mediafiles/LH_email.png)
+
+- The ratings for these pages confirm to me my belief in the consideration of my project's secondary structures, such as alt/aria tags, role labels, and ensuring the presence of indexing for a homepage built from templates that support screen readers and keyboard navigation. The flags shown for the acccessibility category relate to suggestions around how specific my social icons are labelled, and certain other small details such as colour contrast on buttons and how I could further enhance their UX impact on those reliant on support features or with visual impairments. 
+
+- Overall I am satisfied with the outcome of this testing, and will go on to implement the recommended changes where possible following this project to provide a more refined final product in the future that I can consider complete with the acknowledgment of what can make for effective practice surrounding accessibility and SEO going forwards.
+
+## Code Validation
+
+Below 
