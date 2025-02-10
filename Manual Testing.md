@@ -62,4 +62,10 @@ Below will display and summarise the various checks and validators used to verif
 
 ## Code Validation
 
-Below 
+Below will display the results of my HTML, CSS, JavaScript and Python validation, including discussion of any flags or errors and their status as something to be resolved in bugfixes or acknowledged but unaddressed.
+
+### HTML - Nu HTML Checker (W3.org)
+
+![html validator for homepage](Mediafiles/html_homepage.png)
+
+- **Warning:** The warning listed in this review of the HTML for the base/index code makes mention of an unncessary 'role' tag added to the nav section, which had been included in a basic scan over my work to implement as many accessibility relevant tags as possible to improve user experience. However, I was unaware of the nav feature not needing this addition to still function appropriately for those users, and as such the code has since been removed for the final deployment.

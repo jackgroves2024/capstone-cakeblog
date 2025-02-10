@@ -1,9 +1,9 @@
 # Blogs by Jessica W - A capstone Django Project
 
-![Responsive site preview](Mediafiles/responsive.png)
-
 ## Overview
 Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog site to act as a social/community extension of the Cakesbyjessicaw independent baking business created by my partner as a way to turn a hobby into a self sustaining passion project. This inspired me to theme my blog around this with the idea being to bring individuals both to the business, and to form a community around that in which other people can gain inspiration and insights around baking of all kinds, all in a digestible and friendly format.
+
+![Responsive site preview](Mediafiles/responsive.png)
 
 ## UX Design Process
 - **Link to User Stories in GitHub Projects:**
@@ -12,9 +12,8 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
   - [Wireframe Images Here](https://github.com/jackgroves2024/capstone-cakeblog/tree/main/WIREFRAMES%20FOR%20CAPSTONE)
   -  The navigation is simplistic and visually streamlined to keep the pages readable and simple to understand. The overall aim was to avoid clutter whilst providing prominent enough content and interactivity that enhances user experience. Each wireframe was built with consistency in mind as the app's different pages are supposed to appear as extensions of the 'hub' that is the home page.
 
-  **ERD**
-
-  - [Entity Relationship Diagram](Mediafiles/erd.png)
+-  **ERD**
+   - [Entity Relationship Diagram](Mediafiles/erd.png)
   
 - **Design Rationale:**
   - The colour theme was not determined on the wireframes but has been chosen based on the Cakesbyjessicaw business logo and existing designs used in promotional material, branding, and social media icons. The import font family used provides a soft readable set of characters that still feel fitting for the 'comfortable theme' of the overall app without compromising the experience's accessibility. The app's core features and general structure is dependent on the organisation and responsivity that Bootstrap5 provides, from the paginated card layout to the appearance of the various forms present. It has kept things dynamic and accessible across devices by enabling a mobile first development approach.
@@ -75,10 +74,10 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
   - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
 
 ## Testing Summary
-- **Manual Testing:**
+- **Manual Testing: (See [here](https://github.com/jackgroves2024/capstone-cakeblog/blob/main/Manual%20Testing.md) for full documentation)**
   - **Devices and Browsers Tested:** Windows 11, Android 14, Google Chrome, Opera GX, Samsung Browser, Microsoft Edge
   - **Features Tested:** All main site features were manually tested, including navigation, CRUD operations, and User/Admin Authentication
-  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
+  - **Results:** All test cases were reviewed as successful in their methods of verifying the functionality of the site's main features, along with the validation of correct coding practices, and the inclusion of appropriate accessibility features throughout each appropriate file.
 
 
 ## Future Enhancements
