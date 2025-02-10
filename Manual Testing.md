@@ -25,7 +25,7 @@ This document contains all the manual testing performed for the blog project. Ea
 | TC018      |Verify basic page navigation                         |1. Open website 2. Click link in navigation list in header 3. Repeat with each link available                                                                                                             |Users should be directed to the corresponding URL and page for each section of the site listed in the navbar                                                                                                                                                                                                                                               |Outcome as expected                                                                                                                                          |PASS  |
 
 
-# Validation & Error Checks
+# Validation, Performance, & Errors
 
 Below will display and summarise the various checks and validators used to verify the HTML, CSS, JavaScript, and Python aspects of my project. Where errors are present within code I have not created myself (e.g. Django base code causing flags), I shall acknowledge what appears to be the source, and what I have attempted, or would attempt to do to address this in future deployments.
 
@@ -60,12 +60,74 @@ Below will display and summarise the various checks and validators used to verif
 
 - Overall I am satisfied with the outcome of this testing, and will go on to implement the recommended changes where possible following this project to provide a more refined final product in the future that I can consider complete with the acknowledgment of what can make for effective practice surrounding accessibility and SEO going forwards.
 
-## Code Validation
+# Code Validation
 
 Below will display the results of my HTML, CSS, JavaScript and Python validation, including discussion of any flags or errors and their status as something to be resolved in bugfixes or acknowledged but unaddressed.
 
-### HTML - Nu HTML Checker (W3.org)
+## HTML - Nu HTML Checker (W3.org)
+
+### Home page
 
 ![html validator for homepage](Mediafiles/html_homepage.png)
 
 - **Warning:** The warning listed in this review of the HTML for the base/index code makes mention of an unncessary 'role' tag added to the nav section, which had been included in a basic scan over my work to implement as many accessibility relevant tags as possible to improve user experience. However, I was unaware of the nav feature not needing this addition to still function appropriately for those users, and as such the code has since been removed for the final deployment.
+
+- **Info:** The info flags shown are all tied to a single `<hr/>` in which I discovered that for HTML5 standards, the closing slash is not required syntax in this context. As a result, I have altered the tag to now exist as `<hr>`
+
+### About Page
+
+![html validator for about page](Mediafiles/html_about.png)
+
+- **Warning:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+- **Errors:** The errors in this case are both tied to the placeholder Author's bio image, of which an alt tag has been added, and for simple resolution when viewing the code, inline styling has been created by modifying the line to `style="width:75%`. If the editing required was of greater scope, styling this way would be avoided and simply added to the stylesheet for the page. However, given the brief and limited impact it has overall, this solution does not appear as a harmful coding practice for this context as long as it is acknowledged as not a long term solution if styling needs were greater for the image in question. Finally, trailing slashes have been removed from the appropriate code lines where they are not required by HTML5 standards, as their inclusion only catered to xhtml compatability, which I do not currently need.
+
+### Signup Page
+
+![html validator for signup page](Mediafiles/html_signup.png)
+
+- **Warning/Info:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+- **Errors:** The errors tied to the highlighted `<span>` and `<p>` tags have been searched for but do not appear within my own code. This concludes that they are as a result of one of my django imported applications. I have tried to locate the appropriate files in my libraries but could not locate the source of the issue. If/when such a file is found, this fix can be experimented with to allow for correct source code without damaging the functionality of any features provided.
+
+### Login Page
+
+![html validator for login page](Mediafiles/html_login.png)
+
+- **Warning/Info:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+### Post View Page
+
+![html validator for post view page](Mediafiles/html_post.png)
+
+- **Warning/Info:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+- **Errors:** This `</p>` tag error is a result of a django code implementation that I cannot find the source of, as it does not stem from my written code. As mentioned with prior cases of this issue, if/when a responsible file is located, this issue can be attempted to be resolved, but fortunately does not appear impactful to the webpage itself.
+
+### Subscribe (landing form page)
+
+![html validator for login page](Mediafiles/html_sub.png)
+
+- **Warning/Info:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+### Unsubscribe Page
+
+![html validator for login page](Mediafiles/html_unsub.png)
+
+- **Warning/Info:** This is inherited from the base template and has been discussed above, and has been corrected in the final deployment.
+
+### Logout Page
+
+![html validator for login page](Mediafiles/html_unsub.png)
+
+- **Warning/Info:** The continual issues shown in prior images that align here are inherited from the base template and have been corrected in the final deployment. Those new flags regarding a `<hr />` tag are a result of django implemented code and does not exist within my written code. Once the source has been identified this issue can be resolved by removing the slash, but the only impact is on providing xhtml compatability so I do not deem this an active problem with the page or it's functions.
+
+## CSS - Jigsaw (w3.org)
+
+![css stylesheet validation](Mediafiles/css_check.png)
+
+- As shown above, my css stylesheet passes validaton checks, requiring no correction.
+
+![css stylesheet warnings](Mediafiles/css_warning.png)
+
+- These two warnings are the only feedback provided, however these are circumstancial as it just to ensure that the appropriate packages/services are present in the directory to enable use of third party extensions. In the case of this project, this is not a problem, and as such can be considered reviewed, yet disregarded.

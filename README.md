@@ -60,13 +60,15 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 ### Use Cases and Reflections:
 
   - **Code Creation:** 
-    - Reflection: Having access to copilot's extension with VSCode proved to be a major asset in enhancing the quality and pacing of my produced work, thanks to it's assistance in quickly producing simple starter code, such as HTML boilerplate, auto completion of lines based on the context of my work, and allowing me to quickly make comments within my code to enhance the readability and identification of my work's function throughout various files. For heavier use in production, accessing the chat to receive step by step guidance enabled me to identify a starting point in what I wished to create or achieve, with each step breaking down the code to allow me to ensure my own understanding of it before choosing to implement it into my workspace.
+    - Having access to copilot's extension with VSCode proved to be a major asset in enhancing the quality and pacing of my produced work, thanks to it's assistance in quickly producing simple starter code, such as HTML boilerplate, auto completion of lines based on the context of my work, and allowing me to quickly make comments within my code to enhance the readability and identification of my work's function throughout various files. For heavier use in production, accessing the chat to receive step by step guidance enabled me to identify a starting point in what I wished to create or achieve, with each step breaking down the code to allow me to ensure my own understanding of it before choosing to implement it into my workspace.
 
     - Key Example - Mail System: Step by step production using the chat feature assisted me in constructing my Email Update system, as I was unfamiliar with the processes required in the backend to enable functionality of a feature that acts mainly on an external environment, being the emails sent out themselves. I had no prior knowledge of where to begin, but was then able to learn about the existence and implementation of STMP servers and handling them securely to prevent leaking of sensitive information.
+
   - **Debugging:** 
-    - Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
+    - Microsoft Copilot, as well as OpenAI's ChatGPT model were collectively capable of providing me with feedback on code segments, or even entire documents when facing major errors or failing functionality in my features. A major example of this was in establishing some efficient styling rules within my media queries to fix the responsiveness of my navigation bar and my footer,as both of these started to break and misplace content as I developed more to place within them, such as the about page, and the email newsletter box in the footer. In each of these cases, upon addition, other features on the page started to overflow out of their respective areas and fill the main content segment of the website, impacting every page that I had as they were implemented into the base template used to build the consistent visuals of the app.
+
   - **Performance and UX Optimization:** 
-    - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
+    - Taking the right approach with my AI prompts helped to eliminate the need for major alterations or intervention where things had been provided incorrectly. This allowed me to make additions to my code in well-paced increments whilst also knowing enough about what was being provided to me to be able to understand and manipulate my own work. The limited recollections I have regarding false information being provided as a result of AI assistance were primarily due to human error on my behalf as I was enquiring about certain features or ideas that I was not confident in my initial comprehension of, causing my prompts to be too lengthy, and inefficient.
 
 - **Overall Impact:**
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
@@ -75,9 +77,12 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 
 ## Testing Summary
 - **Manual Testing: (See [here](https://github.com/jackgroves2024/capstone-cakeblog/blob/main/Manual%20Testing.md) for full documentation)**
-  - **Devices and Browsers Tested:** Windows 11, Android 14, Google Chrome, Opera GX, Samsung Browser, Microsoft Edge
+
+  - **Devices and Browsers Tested:** Windows 11, Android 14, Google Chrome, Opera GX, Samsung Browser, Microsoft Edge, iOS, MacOS, Safari
+
   - **Features Tested:** All main site features were manually tested, including navigation, CRUD operations, and User/Admin Authentication
-  - **Results:** All test cases were reviewed as successful in their methods of verifying the functionality of the site's main features, along with the validation of correct coding practices, and the inclusion of appropriate accessibility features throughout each appropriate file.
+
+  - **Results:** All test cases were reviewed as successful in their methods of verifying the functionality of the site's main features, along with the validation of correct coding practices, and the inclusion of appropriate accessibility features throughout each appropriate file. All files have been checked via appropriate validators to clear all major HTML, CSS, JS & Python usage in this project.
 
 
 ## Future Enhancements
