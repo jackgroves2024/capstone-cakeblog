@@ -29,12 +29,13 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
   
 
 ## Key Features
-- **User Account System:** A secure registration system for users to create accounts to enable interactions with blog posts they can view. Users can login/logout on demand, with access to CRUD features of their personal content protected behind login. Users can opt to add their email to their account when creating it, and user passwords have minimum requirements to ensure strong security implementation for each account's details.
+- ### User Account System: [Login system feature](Mediafiles/feature_login.png) & [Signup system feature](Mediafiles/feature_signup.png)
+   A secure registration system for users to create accounts to enable interactions with blog posts they can view. Users can login/logout on demand, with access to CRUD features of their personal content protected behind login. Users can opt to add their email to their account when creating it, and user passwords have minimum requirements to ensure strong security implementation for each account's details.
 
-- **Paginated Blog Posts:** 
+- ### Paginated Blog Posts: [View here](Mediafiles/feature_paginated.png)
   The blog posts on the site are paginated to enhance user experience by breaking down content into manageable sections. This feature ensures that users can easily navigate through the blog posts without being overwhelmed by a long, continuous scroll. Pagination improves load times and provides a more organized and accessible way to browse through the content, making it easier for users to find and read the posts they are interested in.
 
-- **Email Subscription System:** 
+- ### Email Subscription System: [View here](Mediafiles/feature_mail.png)
   The email subscription system allows users to subscribe to receive updates and notifications about new blog posts. This feature helps keep users engaged and informed about the latest updates on the site. Users can easily subscribe by providing their email address, and unsubscribe at any time. The system ensures that all email communications are handled securely and efficiently, enhancing the overall user experience and fostering a sense of community among subscribers.
 
  ### Inclusivity Notes: 
@@ -71,9 +72,9 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
     - Taking the right approach with my AI prompts helped to eliminate the need for major alterations or intervention where things had been provided incorrectly. This allowed me to make additions to my code in well-paced increments whilst also knowing enough about what was being provided to me to be able to understand and manipulate my own work. The limited recollections I have regarding false information being provided as a result of AI assistance were primarily due to human error on my behalf as I was enquiring about certain features or ideas that I was not confident in my initial comprehension of, causing my prompts to be too lengthy, and inefficient.
 
 - **Overall Impact:**
-  - AI tools streamlined repetitive tasks, enabling focus on high-level development.
-  - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
-  - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
+  - AI tools streamlined repetitive tasks, allowing additional time on feature development and refinement.
+  - Efficiency gains included faster debugging, new skill development, and improved code quality by maintaining correct practice.
+  - Challenges included ensuring effective prompts were given to produce correct outputs, an issue that reduced over time with use, enhancing performance and helping to highlight accessibility inclusion.
 
 ## Testing Summary
 - **Manual Testing: (See [here](https://github.com/jackgroves2024/capstone-cakeblog/blob/main/Manual%20Testing.md) for full documentation)**
@@ -86,5 +87,34 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 
 
 ## Future Enhancements
-- [List potential improvements or additional features for future development.]
-- Consider enhancements to improve accessibility further, such as voice input capabilities or additional language support.
+- **Feature additions/alterations:**
+  Following this project, I hope to return to working on this site in order to include some greater user accessibility to reach the unsubscribe option for the email update system from the website itself rather than just being directed from the email unsubscribe link, as this is currently far too limited for users to feel comfortably in control of their consent to contact.
+
+  As a new feature, the next app addition to the site will be some form of image collection based on the photography taken of customer orders from the baking business, to provide a gallery of appealing visuals as well as serving promotional purposes for the products available to individuals should they wish to look into that side of this community environment. This may be styled either in the form of pulling from the social media feed of the business accounts existing online, or in the form of a showcase image set related to the e-commerce site that is planned for this business in the future as a method of expanding outreach.
+
+- **Accessibility additions/enhancements:** 
+
+  Advancements in the tools and systems available will have left room for improvements to be made across the project site as it changes and grows. I hope to develop personally in  my skills base with implementing such features. For example, the business that this social community would be tied to is likely to be based in and around the city of Birmingham, as the business is a local independent individual acting within their postcode area. 
+  
+  Birmingham is known as a major cultural melting pot, with communities of various backgrounds and nationalities. As a result, some form of language localisation/translation options for the site could prove greatly beneficial in including some of these locals who, regardless of their level of understanding of the English language (if any), could see this as a considerate and inclusive addition that encourages to engage and involve themselves. This in turn can ultimately lead to a growing customer base, a key goal for any smaller business.
+
+  ## Credits, Acknowledgements & Sources (See [Requirements](requirements.txt) file for extended usage list)
+
+  - 'I Think Therefore I Blog' Walkthrough - Code Institute (Code assistance, Initial Setup Guidance)
+  - Build a Blog From Scratch With Django - [Real Python](https://realpython.com/build-a-blog-from-scratch-django/#set-up-the-development-environment) (Code assistance, concept understanding)
+  - MS Copilot, Copilot Chat Extension - [Microsoft](https://copilot.microsoft.com) (Code implementation, concept understanding, bugfixing, accessibility)
+  - ChatGPT Model 4.0 - [OpenAI](https://chatgpt.com) (Bugfixing, concept understanding)
+  - Nu HTML Checker - [W3C.org HTML Validator](https://validator.w3.org) (HTML5 Standard code validation)
+  - Jigsaw CSS Validation Service - [W3C.org CSS Validation Service](https://jigsaw.w3.org/css-validator/) (CSS3 Standard code/format validation)
+  - JSHint, a JavaScript Code Quality Tool - [JSHint](https://jshint.com) (JavaScript Standard code/format validation for web browser use)
+  - CI Python Linter - [Code Institute Python Validator](https://pep8ci.herokuapp.com/#) (Python pep8 standard code validator, format checker)
+  - Bootstrap v5.3.x Toolkit - [Bootstrap](https://getbootstrap.com)
+  - Heroku Application Hosting - [Heroku Cloud Platform](https://www.heroku.com)
+  - Django v4.2.18 - [Django Web Framework](https://www.djangoproject.com)
+
+  - Many thanks to my partner, self-ran business owner, and inspiration for this project's theme, **Jessica White**, for the emotional support, testing assistance, and consent to use the business to motivate the work I have produced with a personal connection. Without this support, this capstone project, and my growth within this course would not have been as profound as they are at this stage. Her own educational and career background in Computing & Data Science has been a source of education and inspiration. I hope our continued support of the `@Cakesbyjessicaw` name can keep bringing homemade and affordable joy to many across our city.
+
+  - Many thanks to my friends and family for the emotional support provided from everybody around me during the intensive work period of producing this piece of work, and all work I have engaged in prior to this. This environment enables me to pursue challenges like this with a healthy maintenance of work-life balance, promoting stable mental health.
+
+  - Many thanks to the supportive staff within my Code Institute staff for their consistent and reliable streams of contact, individual check-ins, readily accessible support, and provision of up-to-date resources for all of us to take full advantage of in our work and our personal growth in the development field. **Emma, Spencer, and Roo**, none of us would be where we are today without the knowledge and sincerity you have offered to our group.
+  
