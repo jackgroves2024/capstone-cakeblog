@@ -100,6 +100,7 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
 
   ## Credits, Acknowledgements & Sources (See [Requirements](requirements.txt) file for extended usage list)
 
+  ### Credits/Sources
   - 'I Think Therefore I Blog' Walkthrough - Code Institute (Code assistance, Initial Setup Guidance)
   - Build a Blog From Scratch With Django - [Real Python](https://realpython.com/build-a-blog-from-scratch-django/#set-up-the-development-environment) (Code assistance, concept understanding)
   - MS Copilot, Copilot Chat Extension - [Microsoft](https://copilot.microsoft.com) (Code implementation, concept understanding, bugfixing, accessibility)
@@ -111,10 +112,15 @@ Blogs by Jesscica W is a simplistic, MVP standard web app designed as a blog sit
   - Bootstrap v5.3.x Toolkit - [Bootstrap](https://getbootstrap.com)
   - Heroku Application Hosting - [Heroku Cloud Platform](https://www.heroku.com)
   - Django v4.2.18 - [Django Web Framework](https://www.djangoproject.com)
+  - Graphviz - [The Graphviz Authors](https://graphviz.gitlab.io) (Graph visualisation, ERD generation)
+  - Favicon.io PNG to ICO - [Favicon.io](https://favicon.io) (Brand favicon conversion)
+  - CakesByJessicaW - [Jessica White](https://www.instagram.com/cakesbyjessicaw/) (Branding, site theme, icon imagery)
 
+  ### Acknowledgements
   - Many thanks to my partner, self-ran business owner, and inspiration for this project's theme, **Jessica White**, for the emotional support, testing assistance, and consent to use the business to motivate the work I have produced with a personal connection. Without this support, this capstone project, and my growth within this course would not have been as profound as they are at this stage. Her own educational and career background in Computing & Data Science has been a source of education and inspiration. I hope our continued support of the `@Cakesbyjessicaw` name can keep bringing homemade and affordable joy to many across our city.
 
   - Many thanks to my friends and family for the emotional support provided from everybody around me during the intensive work period of producing this piece of work, and all work I have engaged in prior to this. This environment enables me to pursue challenges like this with a healthy maintenance of work-life balance, promoting stable mental health.
 
   - Many thanks to the supportive staff within my Code Institute staff for their consistent and reliable streams of contact, individual check-ins, readily accessible support, and provision of up-to-date resources for all of us to take full advantage of in our work and our personal growth in the development field. **Emma, Spencer, and Roo**, none of us would be where we are today without the knowledge and sincerity you have offered to our group.
-  
+
+  - I acknowledge personally that I am the *only* contributor to this repository for the duration of this project. Any future alterations or collaborations will occur outside the period of assessment.
